@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+}
+
+/* Navigation */
+
+.navbar{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+/* Home Page */
+
+.container{
+    width:70%;
+    margin:40px auto;
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.container h1{
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.container p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.home-img{
+    width:220px;
+    margin:20px;
+}
+
+/* Form */
+
+.form-container{
+    width:500px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.form-container h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* Result */
+
+.result-box{
+    width:500px;
+    margin:70px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.result-box h2{
+    color:#444;
+}
+
+.score{
+    color:#16a34a;
+    font-size:60px;
+    margin:20px;
+}
+
+/* Buttons */
+
+button,
+input[type=submit]{
+
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2563eb;
+    color:white;
+
+    font-size:18px;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover,
+input[type=submit]:hover{
+
+    background:#1d4ed8;
+    transform:scale(1.03);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container,
+.form-container,
+.result-box{
+
+width:90%;
+
+}
+
+.home-img{
+
+width:150px;
+
+}
+
+}

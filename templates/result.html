@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<h2>Student Average Score Prediction</h2>
+
+</div>
+
+<div class="result-box">
+
+<h1>Prediction Result</h1>
+
+<h2>Predicted Average Score</h2>
+
+<h1 class="score">{{ prediction }}</h1>
+
+<br>
+
+<a href="/predict">
+
+<button>Predict Again</button>
+
+</a>
+
+<a href="/">
+
+<button>Home</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>
